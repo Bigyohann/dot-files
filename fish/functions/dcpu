@@ -1,0 +1,3 @@
+function dcpu
+    docker compose up -d
+end
