@@ -9,4 +9,4 @@ else
   DRAWING=on
 fi
 
-sketchybar --set slack drawing=$DRAWING label="Slack (${COUNT})"
+sketchybar --set slack drawing=$DRAWING icon="" label="${COUNT}"
