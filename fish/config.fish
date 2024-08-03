@@ -4,3 +4,7 @@ if status is-interactive
 end
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+zoxide init fish | source
+
+
+fish_add_path /Users/bigyohann/.spicetify
