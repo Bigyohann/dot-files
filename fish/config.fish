@@ -1,10 +1,11 @@
 if status is-interactive
-    set FLINE_PATH $HOME/.config/fish/fishline
-    source $FLINE_PATH/init.fish
+    # Commands to run in interactive sessions can go here
 end
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-zoxide init fish | source
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
-
-fish_add_path /Users/bigyohann/.spicetify
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
